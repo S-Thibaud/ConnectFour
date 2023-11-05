@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styleIndexAndRegister.css" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="register.html">Registeer</a></li>
+            <li><a href="team.html">Ons Team</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="welcomeTitle">
+            <h1>Connect four</h1>
+        </div>
+        <form method="post">
+            <h4>Meld u aan</h4>
+            <div class="container">
+                <span id="formError"></span>
+                <br>
+                <br>
+                <label for="email"><b>E-mailadres</b></label>
+                <input name="email" type="text" placeholder="E-mailadres" id="email" required>
+                <br>
+                <br>
+                <label id="passwordLabel" for="password"><b>Wachtwoord</b></label>
+                <span id="passwordErrorSpan"></span>
+                <input type="password" placeholder="Wachtwoord" id="password" required>
+
+                <p id="redirectText">Geen account? <a href="register.html" id="redirectLink">Registreer u hier</a></p>
+
+                <button type="submit" id="loginButton">Inloggen</button>
+                <br>
+
+                <span id="backendErrorSpan"></span>
+            </div>
+        </form>
+        <br>
+        <div id="developerBox">
+            <a href="team.html" id="developerLink">Developer Team</a>
+        </div>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

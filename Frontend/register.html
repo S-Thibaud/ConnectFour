@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/styleIndexAndRegister.css" type="text/css">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <title>Register</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="register.html">Registeer</a></li>
+            <li><a href="team.html">Ons Team</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="welcomeTitle">
+            <h1>Connect four</h1>
+        </div>
+        <form id="registerForm" method="post">
+            <h4>Registreer u hier</h4>
+            <div class="container">
+                <span id="formError"></span>
+                <span id="passwordErrorSpan"></span>
+                <br>
+                <br>
+                <label for="email"><b>E-mailadres</b></label>
+                <input name="email" type="text" placeholder="E-mailadres" id="email" required>
+                <br>
+                <br>
+                <label id="passwordLabel" for="password"><b>Wachtwoord</b></label>
+                <input type="password" placeholder="Wachtwoord" id="password" required>
+                <br>
+                <br>
+                <label id="pwdVerifyLabel" for="pwdRepeat"><b>Wachtwoord herhalen</b></label>
+                <input type="password" placeholder="Wachtwoord herhalen" id="pwdRepeat" required>
+                <br>
+                <br>
+                <label for="nickname"><b>Nickname</b></label>
+                <input name="nickname" type="text" placeholder="Nickname" id="nickname" required>
+
+                <p id="redirectText">Heb je al een account? <a href="index.html" id="redirectLink">Ga naar de login</a></p>
+
+                <button type="submit" id="registerButton">Registreer</button>
+                <br>
+
+                <span id="backendErrorSpan"></span>
+            </div>
+        </form>
+
+        <div id="developerBox">
+            <a href="team.html" id="developerLink">Developer Team</a>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>

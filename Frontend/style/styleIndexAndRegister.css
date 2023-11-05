@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+h4 {
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: unset;
+    background-image: linear-gradient(to bottom, #07c2f8, #39adff, #7993f9, #ae71dd, #d245ad);
+    color: #fff;
+    /* witte tekst */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1em;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 50px;
+    transition: border-width 0.4s linear;
+}
+
+input[type=text]:hover,
+input[type=password]:hover,
+input[type=email]:hover {
+    border: 5px solid #ccc;
+
+    transition: border-width 0.4s linear;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+    border: 5px solid #989898;
+    outline: none;
+}
+
+button {
+    background-color: #ae71dd;
+    /* knopkleur */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.container {
+    padding: 16px;
+}
+
+main {
+    margin: auto;
+    width: 30%;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+nav {
+    /* background: #d245ad; /* navigatiekleur */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 5px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    float: top;
+
+    top: 0;
+    z-index: 99;
+}
+
+#welcomeTitle {
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    float: left;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li:hover {
+    border-bottom: 5px solid white;
+    cursor: pointer;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: right;
+}
+
+form {
+    margin: 0;
+}
+
+#developerBox {
+    display: block;
+    margin: 0 0 25px;
+    text-align: center;
+}
+
+#redirectText {
+    float: right;
+    font-size: small;
+    margin: unset;
+}
+
+#redirectLink {
+    display: block;
+    text-decoration: none;
+    color: grey;
+    float: right;
+    font-size: small;
+    margin-left: 3px;
+}
+
+#redirectLink:hover {
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+}
+
+.buttonwaitingroom{
+    background-color: rgb(211, 211, 211);
+    /* knopkleur */
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.buttonwaitingroom:hover {
+    opacity: 0.5;
+}
+
+#developerLink {
+    color: #07c2f8;
+    /* linkkleur */
+    text-decoration: none;
+}
+
+#developerLink:hover {
+    border-bottom: 1px solid #07c2f8;
+    /* onderstreep linkkleur */
+    cursor: pointer;
+}
+.melding{
+    vertical-align: auto;
+    text-align: center;
+}
+.left {
+    width: 42.5%;
+    margin-left: 5%;
+    float: left;
+    margin-top: 25px;
+}
+.left label{
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+#formwaitingroom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#colandrow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+#melding{
+    display: flex;
+    color: black;
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#melding img{
+    width: 5%;
+    visibility: hidden;
+}
+.right {
+    margin-left: 5%;
+    width: 42.5%;
+    float: left;
+    border: 5px black solid;
+    border-radius: 15px;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 42.5vw;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* tabled */
+    main {
+        width: 90%;
+    }
+
+    #welcomeTitle {
+        padding-top: 20px;
+    }
+
+    body {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* phone */
+    main {
+        width: 90%;
+        max-height: 85%;
+    }
+
+    #welcomeTitle {
+        padding-top: 20px;
+    }
+}

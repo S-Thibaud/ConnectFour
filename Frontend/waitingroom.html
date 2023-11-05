@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/styleIndexAndRegister.css">
+    <link rel="stylesheet" href="style/waitingroom.css">
+    <title>Waiting Room</title>
+</head>
+
+<body>
+    <div class="left">
+        <form id="formwaitingroom">
+            <h2>Choose a board size:</h2>
+            <div id="colandrow">
+                <label for="gridRows">Rows: </label>
+                <select name="" id="gridRows">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option selected value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+
+                <label for="gridColumns">Columns: </label>
+                <select name="" id="gridColumns">
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option selected value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+
+            <input type="button" value="Join waitingroom" id="joinWaitingButton" class="buttonwaitingroom">
+            <input type="button" value="Get status" id="getStatus" class="buttonwaitingroom">
+        </form>
+
+        <div id="gameStatusOutput"></div>
+    </div>
+
+
+    <div class="right">
+        <span id="melding"><img src="assets/loading.webp" alt=""></span>
+    </div>
+    <script src="js/waitingroom.js"></script>
+</body>
+
+</html>
